@@ -75,8 +75,7 @@ class BankSystem2 {
         System.out.print("Choose account type (current: 1/savings:2): ");
         int accountType = sc.nextInt();
 
-        while (true) {
-            Account account = null;
+             Account account = null;
             if (accountType == 2) {
                 System.out.print("Enter initial balance: ");
                 double initialBalance = sc.nextDouble();
@@ -92,6 +91,7 @@ class BankSystem2 {
                 return;
             }
 
+        while (true) {
             System.out.println("1. Deposit");
             System.out.println("2. Withdraw");
             System.out.println("3. Check balance");
